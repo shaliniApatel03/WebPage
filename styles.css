@@ -1,0 +1,77 @@
+
+
+body {
+    /*background-image: url('https://i.pinimg.com/564x/3d/38/4d/3d384d829dbf4b678cfea617114e149d.jpg');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 100%;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    /*background-image: url('https://i.pinimg.com/564x/3d/38/4d/3d384d829dbf4b678cfea617114e149d.jpg');*/
+}
+@keyframes jump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.bouncing-text {
+    font-family: Arial, sans-serif;
+    /*border: 1px solid black;*/
+    padding: 10px;
+    color: darkblue;
+    text-align: center;
+    animation: jump 3s infinite;
+    letter-spacing: -2px;
+}
+
+h1{
+    background-color: white;
+
+    font-family: Arial, sans-serif; /* Change the font to Arial or any other preferred font */
+    /*border: 1px solid ; /* Add a 1px solid black border around the h1 element */
+    padding: 10px; /* Add some padding around the h1 element */
+    color: black;
+    text-align: center;
+    font-size: xxx-large;
+
+}
+h1 span {
+    display: inline-block;
+    animation: jump 2s infinite;
+}
+
+h2{
+    color: darkblue;
+    text-align: left;
+    padding: 5px;
+    /*border: 5px solid darkgreen;*/
+    backface-visibility: inherit;
+    word-wrap: break-word; /* Enable text wrapping */
+    box-sizing: border-box; /* Include padding and border in the box size */
+    /*resize: both; /* Allow vertical resizing */
+    overflow: auto; /* Add scrollbars if necessary */
+    min-height: 100px; /* Set a minimum height for the box */
+
+
+}
+
+a{
+    border-block: black;
+    padding: 0;
+    margin: 0;
+    background-color: beige;
+    font-size: 50px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: left;
+    gap: 40px; /* Adjust the desired spacing between logos */
+}
